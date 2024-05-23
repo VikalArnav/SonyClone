@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(38, 36, 36);
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-bottom: 6px ridge black; */
+    /* background-color: black; */
+}
+
+
+
+.nav-container {
+    height: 50px;
+    /* border: 2px ridge green; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.nav-logo {
+    /* border: 2px groove red; */
+    width: fit-content;
+    filter: invert();
+    height: 38px;
+    margin-left: 215px;
+    display: flex;
+    align-items: center;
+}
+
+.login-box {
+    /* border:3px solid rgb(97, 63, 20); */
+    width: 130px;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins;
+    margin-left: 690px;
+}
+
+
+.search {
+    margin-top: 6px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    margin-right: 140px;
+}
+
+.search img{
+    filter: invert();
+}
+
+.log-hero {
+    height: 500px;
+    /* background-color: rebeccapurple; */
+    width: 100vw;
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 60px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.slogan-log {
+    height: 360px;
+    box-sizing: border-box;
+    width: 40%;
+    /* background-color: aqua; */
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #fff; */
+
+}
+
+.slogan-log h1 {
+    align-items: center;
+    font-size: 32px;
+    font-family: Poppins;
+    margin-bottom: 60px;
+}
+
+.slogan-log span {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login {
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 360px;
+    width: 52%;
+    /* border: 4px solid yellow; */
+    background-color: rgb(205, 240, 240);
+    border-radius: 12px;
+    align-items: center;
+
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login span {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+}
+
+.form {
+    height: 290px;
+    width: 45%;
+    /* background-color: chartreuse; */
+    /* border: 4px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0px 20px 0px 20px; */
+}
+
+.form label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form input {
+    height: 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submitbtn {
+    width: 120px;
+    border-radius: 12px;
+    height: 40px;
+    background-color: rgb(255, 109, 255);
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: larger;
+    transition: background-color 0.2s ease-in-out, color 0.1s ease-in;
+}
+
+#submitbtn:hover {
+    color: black;
+    background-color: rgb(245, 58, 255);
+}
+
+
+footer {
+    padding: 10px;
+    height: 260px;
+    width: 100vw;
+    background-color: rgb(14, 15, 15);
+    box-sizing: border-box;
+}
+
+.foot-head {
+    color: beige;
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+    /* height:280px; */
+    /* border: 3px solid white; */
+    justify-content: space-evenly;
+}
+
+.row1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: fit-content;
+    /* border: 2px solid green ; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-location input {
+    height: 30px;
+}
+
+
+.row1 a {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.row1 a:visited {
+    color: white;
+}
+
+.row1 span {
+    height: 30px;
+    font-size: 10px;
+    margin-top: 10px;
+    width: 70px;
+    /* background-color: yellow; */
+    color: rgb(255, 255, 255);
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 700;
+}
+
+.row2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border: 2px solid green ; */
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row2 h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.row2 span {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.subscription {
+    border-radius: 14px;
+    height: 340px;
+    margin: 0px auto;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 30px;
+    /* border: 2px solid black; */
+    background-color: rgb(227, 232, 232);
+    margin-bottom: 20px;
+}
+
+.head {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.head h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.name-input {
+    /* border: 2px solid red; */
+    margin-bottom: 15px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.name-input input {
+    height: 40px;
+    width: 50%;padding: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.email-input {
+    /* border: 2px solid red; */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.email-input input{
+    box-sizing: border-box;
+    height: 40px;
+    width: 90%;
+    font-size: 16px;
+    font-family: Poppins;
+    padding: 10px;
+}
+
+
+.btn {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+#subsBtn {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 35px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 13px;
+    background-color: rgb(22, 21, 21);
+    color: #fff;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony India | Welcome to Sony CPRS</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="public/sony.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logo.png" alt="" width="110px">
+                </div>
+                <div class="login-box">
+                    <!-- <img src="public/user-unscreen.gif" alt="" width="45px" id="anim-user"> -->
+                    <!-- <span style="text-align: center;">My Sony</span> -->
+                </div>
+
+                <div class="search">
+                    <!-- <img src="public/heart.png" alt="" width="30px"> -->
+                    <!-- <img src="public/search.png" alt="" width="30px"> -->
+                    <img src="public/shopping-cart.png" alt="" width="20px">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="log-hero">
+            <div class="slogan-log">
+                <h1>Welcome to Sony India product <br>registration* system.</h1>
+                <span>*Registration available for select categories only</span>
+            </div>
+
+            <div class="login">
+                <span>Manage all your Sony Products in one place</span>
+                <div class="form">
+                    <label for="email">Enter Email</label>
+                    <input type="text" name="email" id="email">
+                    <!-- <label for="password">Enter Password</label>
+                    <input type="password" required name="password" id="password"> -->
+                    <br>
+                    <input type="button" value="Submit" id="submitbtn" onclick="login()">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="subscription">
+            <div class="head">
+                <img src="public/newspaper.png" width="25px" alt="">
+                <h3>Subscribe to Newsletter</h3>
+                <span>Get hand-picked news and updates straight to your inbox</span>
+            </div>
+
+            <div class="name-input">
+                <input type="text" placeholder="First name" name="fname" id="fname">
+                <input type="text" placeholder="Last name" name="lname" id="lname">
+            </div>
+
+            <div class="email-input">
+                <input type="email" placeholder="Your email" name="em" id="em">
+            </div>
+
+            <div class="btn">
+                <input type="button" id="subsBtn" value="Subscribe" onclick="savePassword()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-head">
+            <div class="row2">
+                <h4>Televisions & Home Cinema</h4>
+                <span>Televisions</span>
+                <span>Home Theatre & Soundbars</span>
+                <span>Blue-ray™ & DVD Players</span>
+            </div>
+            <div class="row2">
+                <h4>Audio</h4>
+                <span>Headphones</span>
+                <span>MP3 Players</span>
+                <span>High-resolution audio</span>
+                <span>Wireless speakers</span>
+                <span>Audio Systems</span>
+                <span>Digital Voice Recorders</span>
+                <span>Boomboxes, Radios & Portable</span>
+                <span>CD Players</span>
+            </div>
+            <div class="row2">
+                <h4>Cameras</h4>
+                <span>Interchangerable Lens Cameras</span>
+                <span>Lenses</span>
+                <span>Compact Cameras</span>
+                <span>Handycam® Camcorders</span>
+                <span>Cinema Lines Cameras</span>
+                <span>Cinema Accessories</span>
+            </div>
+            <div class="row2">
+                <h4>Other Products</h4>
+                <span>Memory Cards, Storage & <br>Cables</span>
+                <span>Car Audio</span>
+                <span>Automative OEM Branded </span>
+                <span>Audio</span>
+            </div>
+            <div class="row2">
+                <h4>Support</h4>
+                <span>Online Help</span>
+                <span>Track Repair Status</span>
+                <span>Locate Service Centres</span>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script>
+        function login() {
+            const email = document.getElementById("email").value;
+
+            // Retrieve saved entries from localStorage
+            const savedEntries = JSON.parse(localStorage.getItem("savedEntries")) || [];
+
+            // Check if email and password match any saved entry
+            const matchedEntry = savedEntries.find(entry => entry.email === email);
+
+            if (matchedEntry) {
+                // Redirect to some other page (replace "index.html" with the actual page URL)
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+
+
+        function savePassword() {
+            const name = document.getElementById("fname").value + " " + document.getElementById("lname").value;
+            const email = document.getElementById("em").value;
+
+            let entries = JSON.parse(localStorage.getItem('savedEntries')) || [];
+
+            entries.push({ name, email });
+
+            localStorage.setItem("savedEntries", JSON.stringify(entries));
+
+            // Clear input fields after saving
+            document.getElementById("fname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("em").value = "";
+        }
+    </script>
+
+
+</body>
+
+</html>
